@@ -1,3 +1,5 @@
+#ifndef ___PYUSEL_PYCBF___
+#define ___PYUSEL_PYCBF___
 // function declarations
 extern void rxengine(int N, float c, float * ref, float * points, float *tau);
 extern void pwtxengine(int N, float c, float tref, float *ref, float *norm, float *points, float *tau);
@@ -8,3 +10,4 @@ extern void copysubvec(int Norig, int Nsub, int index, float *orig, float *sub);
 extern void sumvecs(int N, float *vec1, float *vec2, float v0, float *summed);
 extern void printifa(int i, float f, float * a, int na);
 extern void fillarr(int N, float *vec, float fillval);
+#endif
