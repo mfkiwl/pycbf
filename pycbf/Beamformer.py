@@ -18,14 +18,9 @@ class Beamformer(ABC):
         Beamformer.__bmfrm_id_counter__ += int(1)
 
     @abstractmethod
-    def __init_tabs__(self):
-        """Generate the delay tabs"""
-        pass
-
-    @abstractmethod
-    def __init_masks__(self):
-        """Generate the delay tabs"""
-        pass
+    def __call__(self, data):
+        """Form beamformed data"""
+        raise NotImplementedError
 
     def free(self):
         logger.info("Freeing shared memory resources...")

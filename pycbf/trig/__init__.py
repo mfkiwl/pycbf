@@ -1,1 +1,1 @@
-from pycbf.trig.trig import *
+from pycbf.trig.pytrig import *
